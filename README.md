@@ -1,33 +1,9 @@
-# Next.js + Tailwind + Typescript starter template
+# Next.js API Routes
 
-Base Next.js project template that uses
+Using Next.js API Routes to call Github API
 
-- Next.js 11+
-- TailwindCSS 2+
-- Typescript 4+
-- ESlint
-- (ts-)jest
-- Prettier
-- editorconfig
-- Typescript's `baseUrl` and `paths` for absolute imports
-
-## Installation
-
-```
-npx create-next-app --example https://github.com/alejandronanez/nextjs-tailwind --use-npm your-app-name
-
-# Or
-
-npx degit alejandronanez/nextjs-tailwind your-project-name
-```
-
-## Available scripts
-
-```
-dev -> run the dev server
-build -> build the project
-start -> run the previously built project
-typecheck -> run tsc against the codebase
-lint -> run next lint
-test -> run Jest
-```
+## References
+- https://github.com/alejandronanez/nextjs-tailwind-starter
+- https://nextjs.org/docs/api-routes/introduction
+- https://docs.github.com/en/rest/guides/getting-started-with-the-rest-api
+- https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/creating-a-personal-access-token
