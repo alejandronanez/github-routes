@@ -1,0 +1,43 @@
+{
+  "name": "tailwind-next",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc",
+    "lint": "next lint",
+    "test": "jest",
+    "analyze": "ANALYZE=true next build"
+  },
+  "dependencies": {
+    "@headlessui/react": "^1.3.0",
+    "@heroicons/react": "^1.0.1",
+    "@next/bundle-analyzer": "^11.0.1",
+    "next": "^11.0.1",
+    "next-compose-plugins": "^2.2.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@testing-library/dom": "^8.1.0",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^12.0.0",
+    "@testing-library/user-event": "^13.2.1",
+    "@types/jest": "^26.0.24",
+    "@types/node": "^14.14.37",
+    "@types/react": "^17.0.3",
+    "autoprefixer": "^10.2.6",
+    "eslint": "^7.30.0",
+    "eslint-config-next": "^11.0.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "jest": "^27.0.6",
+    "postcss": "^8.3.5",
+    "prettier": "^2.2.1",
+    "tailwindcss": "^2.2.4",
+    "ts-jest": "^27.0.4",
+    "typescript": "^4.3.5"
+  }
+}
