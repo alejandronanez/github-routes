@@ -10,7 +10,12 @@ const fetchGithubUserInfo = async (username, options = {}) => {
     throw new Error('Something went wrong');
   }
 
-  return await response.json();
+  const data = await response.json();
+
+  return {
+    data,
+    remainingCalls: response.headers.get('x-ratelimit-remaining'),
+  };
 };
 
 export const unauthenticatedCall = async (username) => {
