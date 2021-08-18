@@ -16,11 +16,11 @@ const fetchGithubUserInfo = async (username, options = {}) => {
   return await response.json();
 };
 
-const unauthenticatedCall = async (username) => {
+export const unauthenticatedCall = async (username) => {
   return await fetchGithubUserInfo(username);
 };
 
-const authenticatedCall = async (username) => {
+export const authenticatedCall = async (username) => {
   const authorizationHeader = encode(`${user}:${password}`);
 
   return await fetchGithubUserInfo(username, {
@@ -28,11 +28,4 @@ const authenticatedCall = async (username) => {
       Authorization: `Basic ${authorizationHeader}`,
     },
   });
-};
-
-export const githubClient = {
-  users: {
-    authenticatedCall,
-    unauthenticatedCall,
-  },
 };
